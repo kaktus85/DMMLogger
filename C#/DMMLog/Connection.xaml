@@ -1,0 +1,21 @@
+﻿<Window x:Class="DMMLog.Connection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DMMLog"
+        mc:Ignorable="d"
+        Title="Connection" Height="200" Width="420" ResizeMode="NoResize" Closing="Window_Closing" KeyUp="Window_KeyUp" Icon="multimeter-01.ico">
+    <Grid>
+        <Label x:Name="labelVISA" Content="VISA address or alias" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxVISA" HorizontalAlignment="Left" Height="23" Margin="135,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+        <Button x:Name="buttonConnect" Content="{Binding Connected}" HorizontalAlignment="Left" Margin="240,70,0,0" VerticalAlignment="Top" Width="75" Click="buttonConnect_Click"/>
+        <Button x:Name="buttonClose" Content="Close" HorizontalAlignment="Left" Margin="320,70,0,0" VerticalAlignment="Top" Width="75" Click="buttonClose_Click"/>
+        <ComboBox x:Name="comboBoxInstrument" HorizontalAlignment="Left" Margin="135,42,0,0" VerticalAlignment="Top" Width="260" SelectedIndex="0" SelectionChanged="comboBoxInstrument_SelectionChanged">
+        </ComboBox>
+        <TextBlock x:Name="textBlockIdentify" Margin="135,94,0,10" TextWrapping="Wrap" HorizontalAlignment="Left" Width="260" ToolTip="Response to identification query"/>
+        <Label x:Name="labelInstrument" Content="Instrument" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxInstrumentConnectionType" HorizontalAlignment="Left" Margin="135,69,0,0" VerticalAlignment="Top" Width="100" SelectedIndex="0" ToolTip="Connection interface">
+        </ComboBox>
+    </Grid>
+</Window>
