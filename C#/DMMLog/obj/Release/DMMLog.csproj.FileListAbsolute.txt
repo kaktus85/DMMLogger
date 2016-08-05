@@ -19,3 +19,24 @@ C:\Dokumenty\Projekty\DMM Logger\DMMLog\DMMLog\obj\Release\DMMLog.Properties.Res
 C:\Dokumenty\Projekty\DMM Logger\DMMLog\DMMLog\obj\Release\DMMLog.csproj.GenerateResource.Cache
 C:\Dokumenty\Projekty\DMM Logger\DMMLog\DMMLog\obj\Release\DMMLog.exe
 C:\Dokumenty\Projekty\DMM Logger\DMMLog\DMMLog\obj\Release\DMMLog.pdb
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\DMMLog.exe.config
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog.exe
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog.pdb
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\DMMLog.exe
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\DMMLog.pdb
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\Ivi.Visa.dll
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\NationalInstruments.Visa.dll
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\Ivi.Visa.xml
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\bin\Release\NationalInstruments.Visa.xml
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\About.g.cs
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\Connection.g.cs
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\MainWindow.g.cs
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\App.g.cs
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog_MarkupCompile.cache
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog_MarkupCompile.lref
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\About.baml
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\Connection.baml
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\MainWindow.baml
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog.g.resources
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog.Properties.Resources.resources
+C:\Dokumenty\Git\DMMLogger\C#\DMMLog\obj\Release\DMMLog.csproj.GenerateResource.Cache

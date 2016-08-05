@@ -101,12 +101,23 @@ namespace DMMLog
         // <EVENT HANDLERS>
 
         /// <summary>
-        /// Connects to the selected multimeter
+        /// Connects to or disconnects from the selected multimeter
         /// </summary>
         /// <param name="sender">Button Connect</param>
         /// <param name="e">Parameter</param>
         private void buttonConnect_Click(object sender, RoutedEventArgs e)
         {
+            textBlockIdentify.Text = string.Empty;
+
+            // disconnect
+            if (multimeters[comboBoxInstrument.SelectedIndex].IsConnected)
+            {
+                multimeters[comboBoxInstrument.SelectedIndex].Disconnect();                
+                UpdateGUI();
+                return;
+            }
+            
+            // connect
             foreach (IMultimeter m in multimeters) // first disconnect from all multimeters
             {
                 if (m.IsConnected)
@@ -114,15 +125,14 @@ namespace DMMLog
                     m.Disconnect();
                 }
             }
-
+            
             try
             { 
                 // try connecting to selected multimeter using address in text box
-                multimeters[comboBoxInstrument.SelectedIndex].Connect(textBoxVISA.Text, (ConnectionModes)(comboBoxInstrumentConnectionType.SelectedIndex));
-                
+                multimeters[comboBoxInstrument.SelectedIndex].Connect(textBoxVISA.Text, (ConnectionModes)(comboBoxInstrumentConnectionType.SelectedIndex));                
                 multimeters[comboBoxInstrument.SelectedIndex].Identify(); // query identify
                 textBlockIdentify.Text = multimeters[comboBoxInstrument.SelectedIndex].Identification; // show identification response in text block
-                multimeters[comboBoxInstrument.SelectedIndex].Reset(); // reset instrument to start from known configuration
+                multimeters[comboBoxInstrument.SelectedIndex].Reset(); // reset instrument to start from known configuration                
             }
             catch (Exception ex)
             {
